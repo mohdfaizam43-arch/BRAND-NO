@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentials | No Logos. Just Quality.</title>
+    <style>
+        :root {
+            --bg-color: #f9f9f7;
+            --text-color: #1a1a1a;
+            --accent-color: #555;
+            --spacing: 2rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: transparent;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #ededed; /* Placeholder for a high-quality image */
+            padding: 0 5%;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        .cta {
+            padding: 1rem 2.5rem;
+            background: var(--text-color);
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        /* Value Propositions */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            padding: 5rem 10%;
+            background: white;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        /* Product Preview */
+        .gallery {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .product-card {
+            background: #eee;
+            aspect-ratio: 3/4;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 5%;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><strong>[ . ]</strong></div> <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Philosophy</a></li>
+            <li><a href="#">Transparency</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Unmarked. Unmatched.</h1>
+        <p>Removing the brand mark allows us to focus on what matters: the highest quality fabrics and ethical manufacturing.</p>
+        <a href="#" class="cta">VIEW COLLECTION</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-item">
+            <h3>No Branding</h3>
+            <p>You are not a billboard. We include no exterior logos, labels, or tags. Just pure silhouette.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Fair Pricing</h3>
+            <p>By eliminating traditional marketing budgets and brand markups, you pay for the craft, not the name.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Quality First</h3>
+            <p>Sourced from the finest mills. Our heavy-weight cotton and raw linens are built to last a lifetime.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <a href="#" class="product-card" style="background: #e2e2e2;">01. The Heavy Tee</a>
+        <a href="#" class="product-card" style="background: #dadada;">02. Relaxed Trouser</a>
+        <a href="#" class="product-card" style="background: #d0d0d0;">03. Raw Linen Shirt</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Crafted for the individual. No rights reserved—just great clothes.</p>
+    </footer>
+
+</body>
+</html>
